@@ -1,20 +1,14 @@
 @extends('layouts.admin')
 @section('content')
-
-<div class="row">
-    @can('ingredient_create')
-    <div style="margin-bottom: 10px;">
-        <div class="col-lg-6">
+@can('ingredient_create')
+    <div style="margin-bottom: 10px;" class="row">
+        <div class="col-lg-12">
             <a class="btn btn-success" href="{{ route('admin.ingredients.create') }}">
                 <i class="fa fa-plus"></i> Добавить ингредиент
             </a>
         </div>
     </div>
 @endcan
-
-
-
-
 
 
 <div class="card">
