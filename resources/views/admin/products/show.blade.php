@@ -10,7 +10,7 @@
         <div class="form-group">
             <div class="form-group">
                 <a class="btn btn-default" href="{{ route('admin.products.index') }}">
-                    Обратно к списку
+                    <i class="fa fa-arrow-left"></i> Назад к списку
                 </a>
             </div>
             <table class="table table-bordered table-striped">
@@ -59,7 +59,7 @@
             </table>
             <div class="form-group">
                 <a class="btn btn-default" href="{{ route('admin.products.index') }}">
-                    Обратно к списку
+                    <i class="fa fa-arrow-left"></i> Назад к списку
                 </a>
             </div>
         </div>

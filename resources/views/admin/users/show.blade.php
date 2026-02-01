@@ -3,14 +3,14 @@
 
 <div class="card">
     <div class="card-header">
-        Показать пользователя
+        Просмотр пользователя
     </div>
 
     <div class="card-body">
         <div class="form-group">
             <div class="form-group">
                 <a class="btn btn-default" href="{{ route('admin.users.index') }}">
-                    Обратно к списку
+                    <i class="fa fa-arrow-left"></i> Назад к списку
                 </a>
             </div>
             <table class="table table-bordered table-striped">
@@ -41,7 +41,7 @@
                     </tr>
                     <tr>
                         <th>
-                            Электронная почта подтверждена на
+                            Дата подтверждения email
                         </th>
                         <td>
                             {{ $user->email_verified_at }}
@@ -61,7 +61,7 @@
             </table>
             <div class="form-group">
                 <a class="btn btn-default" href="{{ route('admin.users.index') }}">
-                    Обратно к списку
+                    <i class="fa fa-arrow-left"></i> Назад к списку
                 </a>
             </div>
         </div>

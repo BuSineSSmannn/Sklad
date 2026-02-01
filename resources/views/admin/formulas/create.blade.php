@@ -3,7 +3,7 @@
 
 <div class="card">
     <div class="card-header">
-        Создать формулу
+        Добавить рецепт
     </div>
 
     <div class="card-body">
@@ -52,8 +52,8 @@
 
 
             <div class="form-group">
-                <button class="btn btn-info" type="submit">
-                    Сохранить
+                <button class="btn btn-success" type="submit">
+                    <i class="fa fa-save"></i> Сохранить
                 </button>
             </div>
         </form>

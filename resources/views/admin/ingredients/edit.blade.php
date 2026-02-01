@@ -29,8 +29,8 @@
 
 
             <div class="form-group">
-                <button class="btn btn-danger" type="submit">
-                    Сохранить
+                <button class="btn btn-success" type="submit">
+                    <i class="fa fa-save"></i> Сохранить
                 </button>
             </div>
         </form>

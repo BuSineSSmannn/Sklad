@@ -4,7 +4,7 @@
     <div style="margin-bottom: 10px;" class="row">
         <div class="col-lg-12">
             <a class="btn btn-success" href="{{ route('admin.roles.create') }}">
-                Добавить роль
+                <i class="fa fa-plus"></i> Добавить роль
             </a>
         </div>
     </div>
@@ -46,7 +46,7 @@
                             </td>
                             <td>
                                 @foreach($role->permissions as $key => $item)
-                                    <span class="badge badge-info">{{ $item->title }}</span>
+                                    <span class="badge badge-info">{{ $item->localized_title }}</span>
                                 @endforeach
                             </td>
                             <td>

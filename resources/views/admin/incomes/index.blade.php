@@ -3,7 +3,7 @@
 
 <div class="card">
     <div class="card-header">
-        Дополнение история
+        История пополнений
         <form action="{{route('admin.income.filter')}}" method="POST" class="float-right" enctype="multipart/form-data">
             @csrf
             <label for="">Из : </label>

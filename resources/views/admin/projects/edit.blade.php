@@ -116,8 +116,8 @@
                 <span class="help-block">{{ trans('cruds.project.fields.participants_helper') }}</span>
             </div>
             <div class="form-group">
-                <button class="btn btn-danger" type="submit">
-                    {{ trans('global.save') }}
+                <button class="btn btn-success" type="submit">
+                    <i class="fa fa-save"></i> {{ trans('global.save') }}
                 </button>
             </div>
         </form>

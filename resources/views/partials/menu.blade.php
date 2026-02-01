@@ -12,7 +12,7 @@
                 <i class="c-sidebar-nav-icon fas fa-fw fa-tachometer-alt">
 
                 </i>
-                Приборная доска
+                Главная
             </a>
         </li>
         @can('user_management_access')
@@ -127,7 +127,7 @@
                     <i class="fa-fw fas fa-balance-scale c-sidebar-nav-icon">
 
                     </i>
-                    Единица измерения
+                    Единицы измерения
                 </a>
             </li>
         @endcan

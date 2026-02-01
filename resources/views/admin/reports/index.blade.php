@@ -4,7 +4,7 @@
     <div style="margin-bottom: 10px;" class="row">
         <div class="col-lg-12">
             <a class="btn btn-success" href="{{ route('admin.products.create') }}">
-                Создать продукт
+                <i class="fa fa-plus"></i> Произвести продукт
             </a>
         </div>
     </div>
@@ -59,15 +59,15 @@
 
                                 @can('product_edit')
                                     <a class="btn btn-xs btn-info" href="{{ route('admin.products.edit', $project->id) }}">
-                                        {{ trans('global.edit') }}
+                                        <i class="fa fa-pencil"></i>
                                     </a>
                                 @endcan
 
                                 @can('product_delete')
-                                    <form action="{{ route('admin.products.destroy', $project->id) }}" method="POST" onsubmit="return confirm('{{ trans('global.areYouSure') }}');" style="display: inline-block;">
+                                    <form action="{{ route('admin.products.destroy', $project->id) }}" method="POST" onsubmit="return confirm('Вы уверены?');" style="display: inline-block;">
                                         <input type="hidden" name="_method" value="DELETE">
                                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                                        <input type="submit" class="btn btn-xs btn-danger" value="{{ trans('global.delete') }}">
+                                        <button type="submit" class="btn btn-xs btn-danger"><i class="fa fa-trash"></i></button>
                                     </form>
                                 @endcan
 

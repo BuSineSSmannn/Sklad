@@ -4,14 +4,14 @@
     <div style="margin-bottom: 10px;" class="row">
         <div class="col-lg-12">
             <a class="btn btn-success" href="{{ route('admin.formulas.create') }}">
-                Создать новую формулу
+                <i class="fa fa-plus"></i> Добавить рецепт
             </a>
         </div>
     </div>
 @endcan
 <div class="card">
     <div class="card-header">
-        Список всех формул
+        Рецепты продуктов
     </div>
 
     <div class="card-body">

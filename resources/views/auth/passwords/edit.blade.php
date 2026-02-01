@@ -30,8 +30,8 @@
                         @endif
                     </div>
                     <div class="form-group">
-                        <button class="btn btn-danger" type="submit">
-                            Сохранить
+                        <button class="btn btn-success" type="submit">
+                            <i class="fa fa-save"></i> Сохранить
                         </button>
                     </div>
                 </form>
@@ -61,8 +61,8 @@
                         <input class="form-control" type="password" name="password_confirmation" id="password_confirmation" required>
                     </div>
                     <div class="form-group">
-                        <button class="btn btn-danger" type="submit">
-                            Сохранить
+                        <button class="btn btn-success" type="submit">
+                            <i class="fa fa-lock"></i> Изменить пароль
                         </button>
                     </div>
                 </form>
@@ -82,7 +82,7 @@
                     @csrf
                     <div class="form-group">
                         <button class="btn btn-danger" type="submit">
-                            Удалить
+                            <i class="fa fa-trash"></i> Удалить аккаунт
                         </button>
                     </div>
                 </form>

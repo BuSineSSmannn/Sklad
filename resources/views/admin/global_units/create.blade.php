@@ -3,7 +3,7 @@
 
 <div class="card">
     <div class="card-header">
-        Создать единица
+        Единицы измерения
     </div>
 
     <div class="card-body">
@@ -12,22 +12,22 @@
 
             <div class="row">
                 <div class="col-6">
-                    <label for="" class="require">Название единица</label>
+                    <label for="" class="required">Название единицы</label>
                     <div class="form-group">
-                        <input type="text" class="form-control" name="unit_name">
+                        <input type="text" class="form-control" name="unit_name" placeholder="Например: Килограмм">
                     </div>
                 </div>
                 <div class="col-6">
-                    <label for="" class="require">Расширение единица</label>
+                    <label for="" class="required">Сокращение</label>
                     <div class="form-group">
-                        <input type="text" class="form-control" name="unit_ext">
+                        <input type="text" class="form-control" name="unit_ext" placeholder="Например: кг">
                     </div>
                 </div>
             </div>
 
             <div class="form-group">
-                <button class="btn btn-info" type="submit">
-                    Сохранить
+                <button class="btn btn-success" type="submit">
+                    <i class="fa fa-save"></i> Сохранить
                 </button>
             </div>
         </form>
@@ -38,10 +38,10 @@
                     <tr>
 
                         <th>
-                            Название единица
+                            Название единицы
                         </th>
                         <th>
-                            Расширение единица
+                            Сокращение
                         </th>
                         <th>
                             &nbsp;

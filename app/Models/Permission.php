@@ -30,4 +30,14 @@ class Permission extends Model
     {
         return $date->format('Y-m-d H:i:s');
     }
+
+    /**
+     * Получить локализованное название разрешения
+     */
+    public function getLocalizedTitleAttribute()
+    {
+        return __('global.permissions.' . $this->title) !== 'global.permissions.' . $this->title
+            ? __('global.permissions.' . $this->title)
+            : $this->title;
+    }
 }

@@ -3,7 +3,7 @@
 
 <div class="card">
     <div class="card-header">
-        Создать роль
+        Добавить роль
     </div>
 
     <div class="card-body">
@@ -38,8 +38,8 @@
                 <span class="help-block">{{ trans('cruds.role.fields.permissions_helper') }}</span>
             </div>
             <div class="form-group">
-                <button class="btn btn-danger" type="submit">
-                    Сохранить
+                <button class="btn btn-success" type="submit">
+                    <i class="fa fa-save"></i> Сохранить
                 </button>
             </div>
         </form>

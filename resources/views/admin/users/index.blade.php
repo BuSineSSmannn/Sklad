@@ -4,7 +4,7 @@
     <div style="margin-bottom: 10px;" class="row">
         <div class="col-lg-12">
             <a class="btn btn-success" href="{{ route('admin.users.create') }}">
-                Добавить пользователя
+                <i class="fa fa-plus"></i> Добавить пользователя
             </a>
         </div>
     </div>

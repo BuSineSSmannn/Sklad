@@ -3,14 +3,14 @@
 
 <div class="card">
     <div class="card-header">
-        Показать роли
+        Просмотр роли
     </div>
 
     <div class="card-body">
         <div class="form-group">
             <div class="form-group">
                 <a class="btn btn-default" href="{{ route('admin.roles.index') }}">
-                    Обратно к списку
+                    <i class="fa fa-arrow-left"></i> Назад к списку
                 </a>
             </div>
             <table class="table table-bordered table-striped">
@@ -37,7 +37,7 @@
                         </th>
                         <td>
                             @foreach($role->permissions as $key => $permissions)
-                                <span class="label label-info">{{ $permissions->title }}</span>
+                                <span class="badge badge-info">{{ $permissions->localized_title }}</span>
                             @endforeach
                         </td>
                     </tr>
@@ -45,7 +45,7 @@
             </table>
             <div class="form-group">
                 <a class="btn btn-default" href="{{ route('admin.roles.index') }}">
-                    Обратно к списку
+                    <i class="fa fa-arrow-left"></i> Назад к списку
                 </a>
             </div>
         </div>

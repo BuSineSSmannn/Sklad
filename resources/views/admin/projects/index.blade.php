@@ -4,7 +4,7 @@
     <div style="margin-bottom: 10px;" class="row">
         <div class="col-lg-12">
             <a class="btn btn-success" href="{{ route('admin.projects.create') }}">
-                {{ trans('global.add') }} {{ trans('cruds.project.title_singular') }}
+                <i class="fa fa-plus"></i> {{ trans('global.add') }} {{ trans('cruds.project.title_singular') }}
             </a>
         </div>
     </div>
@@ -93,21 +93,21 @@
                             <td>
                                 @can('project_show')
                                     <a class="btn btn-xs btn-primary" href="{{ route('admin.projects.show', $project->id) }}">
-                                        {{ trans('global.view') }}
+                                        <i class="fa fa-search"></i>
                                     </a>
                                 @endcan
 
                                 @can('project_edit')
                                     <a class="btn btn-xs btn-info" href="{{ route('admin.projects.edit', $project->id) }}">
-                                        {{ trans('global.edit') }}
+                                        <i class="fa fa-pencil"></i>
                                     </a>
                                 @endcan
 
                                 @can('project_delete')
-                                    <form action="{{ route('admin.projects.destroy', $project->id) }}" method="POST" onsubmit="return confirm('{{ trans('global.areYouSure') }}');" style="display: inline-block;">
+                                    <form action="{{ route('admin.projects.destroy', $project->id) }}" method="POST" onsubmit="return confirm('Вы уверены?');" style="display: inline-block;">
                                         <input type="hidden" name="_method" value="DELETE">
                                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                                        <input type="submit" class="btn btn-xs btn-danger" value="{{ trans('global.delete') }}">
+                                        <button type="submit" class="btn btn-xs btn-danger"><i class="fa fa-trash"></i></button>
                                     </form>
                                 @endcan
 

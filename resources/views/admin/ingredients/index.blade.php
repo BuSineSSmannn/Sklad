@@ -6,7 +6,7 @@
     <div style="margin-bottom: 10px;">
         <div class="col-lg-6">
             <a class="btn btn-success" href="{{ route('admin.ingredients.create') }}">
-                Добавить новый ингредиент
+                <i class="fa fa-plus"></i> Добавить ингредиент
             </a>
         </div>
     </div>
