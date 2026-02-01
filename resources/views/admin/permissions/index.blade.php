@@ -54,7 +54,7 @@
 
                                 @can('permission_edit')
                                     <a class="btn btn-xs btn-info" href="{{ route('admin.permissions.edit', $permission->id) }}">
-                                        <i class="fa fa-pencil"></i>
+                                        <i class="fa fa-edit"></i>
                                     </a>
                                 @endcan
 

@@ -89,7 +89,7 @@
                             <td>
                                 @can('ingredient_edit')
                                     <a class="btn btn-xs btn-info mb-2" href="{{ route('admin.ingredients.edit', $i->id) }}">
-                                        <i class="fa fa-pencil"></i>
+                                        <i class="fa fa-edit"></i>
                                     </a>
                                 @endcan
 

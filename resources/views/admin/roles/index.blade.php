@@ -58,7 +58,7 @@
 
                                 @can('role_edit')
                                     <a class="btn btn-xs btn-info mb-2" href="{{ route('admin.roles.edit', $role->id) }}">
-                                        <i class="fa fa-pencil"></i>
+                                        <i class="fa fa-edit"></i>
                                     </a>
                                 @endcan
 
