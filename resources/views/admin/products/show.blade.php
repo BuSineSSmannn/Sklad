@@ -3,7 +3,7 @@
 
 <div class="card">
     <div class="card-header">
-        Show Product
+        Просмотр продукта
     </div>
 
     <div class="card-body">
